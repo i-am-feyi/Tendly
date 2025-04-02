@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import CardOutline from "./ui/card-outline";
 
 interface EyebrowBannerProps {

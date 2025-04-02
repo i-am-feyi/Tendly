@@ -6,6 +6,7 @@ import featureImage1 from "@/public/images/feature-1.png";
 import featureImage2 from "@/public/images/feature-2.png";
 import featureImage3 from "@/public/images/feature-3.png";
 import featureImage4 from "@/public/images/feature-4.png";
+import SectionHeader from "@/components/section-header";
 
 const Zap = () => (
   <svg
@@ -58,15 +59,11 @@ const PowerFeatures = () => {
       <CardOutline className="py-10 lg:py-[4.5rem]">
         <div className="flex flex-col items-center gap-y-4">
           <EyebrowBanner text="Power Features" leftIcon={<Zap />} />
-          <div className="flex flex-col items-center *:text-center gap-y-4 max-w-[669px] mx-auto">
-            <p className="text-[2.5rem] lg:text-[52px] font-medium">
-              Features That’s Up Close and Personal
-            </p>
-            <p className="text-gray-500 text-lg text-center">
-              Strong relationships start with strong interactions. Our feature lets you
-              personalize customer experiences, building loyalty and revenue.
-            </p>
-          </div>
+          <SectionHeader
+            title="Features That’s Up Close and Personal"
+            description="Strong relationships start with strong interactions. Our feature lets you
+              personalize customer experiences, building loyalty and revenue."
+          />
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 px-4 lg:px-10 mt-10 lg:mt-[72px]">
