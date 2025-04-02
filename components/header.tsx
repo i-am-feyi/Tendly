@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { Menu } from "lucide-react";
 
 const navItems = [
   {
@@ -29,7 +30,7 @@ const navItems = [
 const Header = () => {
   return (
     <header>
-      <section className="container mx-auto">
+      <section className="container mx-auto px-4">
         <div className="flex gap-4 justify-between items-center h-[5.5rem]">
           <div className="flex gap-2 items-center">
             {/* <div className="relative size-[30px]"> */}
@@ -42,7 +43,14 @@ const Header = () => {
             {/* </div> */}
             {/* <span className="font-semibold text-2xl">Tendly</span> */}
           </div>
-          <div className="flex gap-2">
+
+          {/* Mobile Nav */}
+          <div className="flex lg:hidden justify-end items-center">
+            <Menu />
+          </div>
+
+          {/* Desktop Full Nav */}
+          <div className="hidden lg:flex gap-2">
             {navItems.map(({ href, label }) => (
               <div key={label}>
                 <Link
@@ -54,7 +62,7 @@ const Header = () => {
               </div>
             ))}
           </div>
-          <div className="flex gap-2">
+          <div className="hidden lg:flex gap-2">
             <Button variant="outline" size="lg">
               Login
             </Button>
