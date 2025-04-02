@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import companyLogo1 from "@/public/images/company_logo-1.png";
 import companyLogo2 from "@/public/images/company_logo-2.png";
 import companyLogo3 from "@/public/images/company_logo-3.png";
-import companyLogo4 from "@/public/images/company_logo-4.png";
 import companyLogo5 from "@/public/images/company_logo-5.png";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
