@@ -57,7 +57,7 @@ const PowerFeatures = () => {
   return (
     <section className="py-8 lg:py-16 container mx-auto">
       <CardOutline className="py-10 lg:py-[4.5rem]">
-        <div className="flex flex-col items-center gap-y-4">
+        <div className="flex flex-col items-center gap-y-4 px-4">
           <EyebrowBanner text="Power Features" leftIcon={<Zap />} />
           <SectionHeader
             title="Features That’s Up Close and Personal"
