@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.className, "antialiased")}>
         <Header />
-        <main className="px-4">{children}</main>
+        <main className="px-4 overflow-hidden">{children}</main>
       </body>
     </html>
   );
