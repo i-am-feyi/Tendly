@@ -3,6 +3,7 @@ import { ArrowRight, Play } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import CardOutline from "@/components/ui/card-outline";
+import dashboardImage from "@/public/images/Illustration.png";
 
 const Hero = () => {
   return (
@@ -95,7 +96,7 @@ const Hero = () => {
         {/* Image and Play Button */}
         <div className="relative mt-9 flex justify-center px-2 w-full">
           <Image
-            src="/images/illustration.png"
+            src={dashboardImage}
             alt="Dashboard"
             className="w-full"
             width={4480}
