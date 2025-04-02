@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Card, CardContent } from "./card";
 
 const CardOutline = ({
   children,
