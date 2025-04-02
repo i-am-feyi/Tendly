@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="inline-flex justify-self-center">
             <CardOutline className="p-2 rounded-full text-sm font-medium flex items-center">
               <div className="flex items-center gap-2">
-                <Sandbox />
+                {/* <Sandbox /> */}
                 Tendly Automation is now live
                 <ArrowRight className="size-4 -ml-1" />
               </div>
